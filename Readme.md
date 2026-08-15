@@ -36,7 +36,7 @@ Runtime overhead is minimal thanks to DIFFI's model-specific design.
 
 ---
 
-## Ablation Study
+<!-- ## Ablation Study
 
 To isolate each mechanism's contribution, we evaluate four configurations in addition to the IF baseline.
 
@@ -83,7 +83,7 @@ This is the **most influential hyperparameter**. Performance jumps from 0.713 at
 
 Performance is highest at low temperature (temp = 0.4, AUC = 0.726) and decreases mildly as temp increases, remaining within a narrow [0.720, 0.726] band. Lower temperatures better exploit the GFI signal by concentrating feature selection on the most informative attributes; higher temperatures progressively approach uniform random selection. The overall effect remains small.
 
-**Overall:** XGIF delivers stable performance over a wide range of settings, with only the extension factor requiring a minimal value to be effective.
+**Overall:** XGIF delivers stable performance over a wide range of settings, with only the extension factor requiring a minimal value to be effective. -->
 
 ## Installation
 
