@@ -111,3 +111,31 @@ model = IsoForest(
 model.fit(X_train)
 scores = model.anomaly_score(X_test)  # higher = more anomalous
 ```
+
+---
+
+## Paper
+
+This work has been accepted and published at **CIKM '26** (the 35th ACM International Conference on Information and Knowledge Management), November 2026.
+
+> **XGIF: An Explanation-Guided Anomaly Detection Extention of Isolation Forest**
+> Oloufemy Prunel Akplogan, Moncef Garouani, Julien Aligon
+> *Proceedings of the 35th ACM International Conference on Information and Knowledge Management (CIKM '26)*, pages 6815–6820.
+> DOI: [10.1145/3799682.3840013](https://doi.org/10.1145/3799682.3840013)
+
+### Citation
+
+If you use XGIF in your research, please cite:
+
+```bibtex
+@inproceedings{akplogan2026xgif,
+  title     = {XGIF: An Explanation-Guided Anomaly Detection Extention of Isolation Forest},
+  author    = {Akplogan, Oloufemy Prunel and Garouani, Moncef and Aligon, Julien},
+  booktitle = {Proceedings of the 35th ACM International Conference on Information and Knowledge Management},
+  series    = {CIKM '26},
+  pages     = {6815--6820},
+  year      = {2026},
+  doi       = {10.1145/3799682.3840013},
+  url       = {https://doi.org/10.1145/3799682.3840013}
+}
+```
