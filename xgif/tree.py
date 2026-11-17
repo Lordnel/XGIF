@@ -6,7 +6,7 @@ IsoTree: a single isolation tree used by IsoForest.
 
 from __future__ import annotations
 import numpy as np
-from node import IsoNode
+from xgif.node import IsoNode
 
 def _c(n: int) -> float:
     """
@@ -91,6 +91,7 @@ class IsoTree:
 
         self.root          : IsoNode | None = None
         self.idx           : np.ndarray | None = None
+        self.current_depth : int = 0
 
     def _select_feature(self, X: np.ndarray, idx: np.ndarray) -> int:
         """Uniform random feature selection (standard iForest)."""
@@ -169,6 +170,7 @@ class IsoTree:
             Root of the subtree built from idx.
         """
         node = IsoNode(depth, None, None, len(idx), None, None)
+        self.current_depth = max(self.current_depth, depth)
 
         if self._should_stop(X, idx, depth):
             return node

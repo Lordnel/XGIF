@@ -6,7 +6,7 @@ IsoForest: Isolation Forest with optional XGIF guided extension.
 
 from __future__ import annotations
 import numpy as np
-from tree import IsoTree, _c
+from xgif.tree import IsoTree, _c
 
 class IsoForest:
     """
@@ -82,7 +82,7 @@ class IsoForest:
             self.global_std_ref : σ̄ = mean_i std_q(LFI[i, :])
             self.feature_probs_ : softmax(clip(GFI, 0) / temp)  shape (Q,)
         """
-        from diffi import global_diffi, local_diffi_batch
+        from xgif.diffi import global_diffi, local_diffi_batch
 
         seed_if0 = self.random_state + 7
         if0 = IsoForest(t=self.t, psi=self.psi, random_state=seed_if0)

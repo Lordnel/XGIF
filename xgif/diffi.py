@@ -17,8 +17,8 @@ Reference:
 
 from __future__ import annotations
 import numpy as np
-from node import IsoNode
-from tree import IsoTree
+from xgif.node import IsoNode
+from xgif.tree import IsoTree
 
 def _collect_internal_nodes(root: IsoNode) -> list[IsoNode]:
     """
